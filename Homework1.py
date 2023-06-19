@@ -1,21 +1,8 @@
-a = 'abcdf'
-
-'''
-def strcounter(s):
-    counter = 0
-    for sym in s:
-        counter += 1
-    print(counter)
-strcounter(a)
-'''
-
-def strcounter(s):
-    for sym in s:
-        counter = 0
-        for sub_sym in s:
-            if sym == sub_sym:
-                counter += 1
-        print(sym, counter)
-
-
-strcounter(a)
+def palindrome(s):
+    return s[::-1] == s
+    while True:
+        s = input('Введите слово: ')
+        if palindrome(s):
+            print(f"{s} это слово палиндром")
+        else:
+            print ('Это слово не палиндром')
